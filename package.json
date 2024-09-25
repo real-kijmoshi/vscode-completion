@@ -1,0 +1,32 @@
+{
+  "name": "kijmoshi.vscode-inline-suggestion",
+  "displayName": "VS Code Inline Suggestions",
+  "description": "Provides inline code suggestions",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": { },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "glob": "^11.0.0",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
